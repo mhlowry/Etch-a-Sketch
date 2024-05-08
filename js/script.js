@@ -7,9 +7,13 @@ for (let i = 0; i < 16; i++)
         let newDiv = document.createElement("div");
         newDiv.style.width = `${(1 / 16) * 100}%`;
         newDiv.style.height = `${(1 / 16) * 100}%`;
-        newDiv.innerText = `${j+1}`;
-        container.appendChild(newDiv);
-        
+        newDiv.innerText = `${j+1}`; // for debugging
+
+        newDiv.addEventListener("mouseover", () => {
+            newDiv.style.backgroundColor = 'black';
+        });
+
+        container.appendChild(newDiv); 
     }
     
 }
