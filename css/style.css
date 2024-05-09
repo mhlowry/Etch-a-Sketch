@@ -6,7 +6,15 @@
     background-color: white;
 }
 
-h1 {
+h1, h3 {
+    margin: 2vh;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+input {
     margin: 2vh;
 }
 
@@ -19,8 +27,8 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 50em;
-    height: 50em;
+    width: 40em;
+    height: 40em;
 }
 
 div {
@@ -29,5 +37,18 @@ div {
     display: block;
     text-align: center;
     
+}
+
+.slider-button {
+    display: flex;
+    border: none;
+    margin: 1em;
+    align-items: center;
+}
+
+button {
+    width: 5em;
+    height: 3em;
+    border-radius: 10%;
 }
     
